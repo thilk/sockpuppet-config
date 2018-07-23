@@ -157,10 +157,8 @@ function ensure_contains_with_removal {
         shift
         shift
         for REMOVAL in "$@"; do
-            echo '/'"$REMOVAL"'/d' "$FILE"
             sed -i '/'"$(echo "$REMOVAL" | sed -e 's/[\/&]/\\&/g' )"'/d' "$FILE"
         done
-        echo '$ a '"$LINE" "$FILE"
         sed -i '$ a '"$(echo "$LINE" | sed -e 's/[\/&]/\\&/g' )" "$FILE"
         return 0
     fi
