@@ -93,6 +93,11 @@ for CMD in sed kill killall md5sum sleep ps cut bc cp chmod fgrep; do
     command -v $CMD >/dev/null 2>&1 || { echo >&2 "sockpuppet.sh requires command $CMD, but it's not installed.  Aborting."; exit 1; }
 done
 
+# fix interactive cp aliasing on some distros
+if [[ $(which cp) =~ alias ]]; then
+    alias cp=/bin/cp;
+fi
+
 # set timer to prevent accumulation of stalled jobs if something goes wrong
 TIMEOUT_DELAY=$(echo "60 * ( $RUN_INTERVAL_MINUTES - 1 ) + 20" | bc)
 ( sleep $TIMEOUT_DELAY; if ps -p "$$" > /dev/null; then kill "$$"; sleep 5; if ps -p "$$" > /dev/null; then kill -9 "$$"; fi; fi ) &
