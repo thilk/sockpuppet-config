@@ -1,6 +1,7 @@
 # sockpuppet-config
 
-SOCKPUPPET
+SOCKPUPPET:
+
 A 1-FILE CONFIG FILE MANAGER devoid of CONFIG FILES FOR YOUR CONFIG FILES
 
 Sockpuppet implements a minimalistic but serviceable approach to cluster/VM
