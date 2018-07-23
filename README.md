@@ -1,0 +1,2 @@
+# sockpuppet-config
+A 1-FILE CONFIG FILE MANAGER devoid of CONFIG FILES FOR YOUR CONFIG FILES
