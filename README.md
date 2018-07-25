@@ -123,3 +123,14 @@ But ultimately, it's just a recurring bash script; do whatever you want.
 
 Congrats you're done.
 
+## About:
+
+At the time of this writing, Sockpuppet is currently being used in production
+in a heterogeneous, geographically distributed Linux and FreeBSD cluster
+environment with a few dozen physical servers and various VMs.  It is mainly
+intended for small and mid-sized clusters, and this functionality was a good
+fit for our needs.
+
+If you write any other simple, basic primitives that are useful to you, try
+submitting a pull request to include them here.
+
