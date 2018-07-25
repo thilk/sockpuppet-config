@@ -25,7 +25,9 @@ the first cmdline arg (e.g. 'sudo sockpuppet.sh uninstall').  Currently
 
 That's it.
 
-## Example configuration spec:
+## Example configuration:
+
+Sockpuppet is configured by directly editing a copy of sockpuppet.sh itself.
 
 First, fill in the user-specified parameters at the top of sockpuppet.sh:
 
