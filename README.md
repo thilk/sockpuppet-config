@@ -135,6 +135,13 @@ environment with a few dozen physical servers and various VMs.  It is mainly
 intended for small and mid-sized clusters, and this functionality was a good
 fit for our needs.
 
+We saw a little too much of, e.g., "XXXXXXXXX offers several support tiers
+in addition to expert consulting services to XXXXXXXXX Enterprise customers
+for optimized new implementations and complex data center transformation
+projects," which essentially just amount to paying some VC-funded outfit
+$XXX/hour to literaly write config file for your config files.  It seemed
+as though much of the complexity in this space was superfluous.
+
 If you write any other simple, basic primitives that are useful to you, try
 submitting a pull request to include them here.
 
