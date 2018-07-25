@@ -23,7 +23,11 @@ install it (e.g. 'sudo sockpuppet.sh').  Uninstall by passing "uninstall" as
 the first cmdline arg (e.g. 'sudo sockpuppet.sh uninstall').  Currently
 *nix-only, for the foreseeable future.
 
-Examples:
+That's it.
+
+## Example configuration spec:
+
+Just put something like this at the bottom of sockpuppet.sh (adjust to taste):
 
 ```
 update_file 440 root /etc/sudoers
@@ -40,7 +44,8 @@ hostname_like media && update_file 775 root /usr/bin/mount_iso.sh
 update_file 664 thilk /home/thilk/.vimrc
 update_file 664 thilk /home/thilk/.muttrc
 
-hashes_match /home/thilk/.Xauthority /root/.Xauthority || ( cp /home/thilk/.Xauthority /root/.Xauthority && chown root:root /root/.Xauthority )
+hashes_match /home/thilk/.Xauthority /root/.Xauthority \
+        || ( cp /home/thilk/.Xauthority /root/.Xauthority && chown root:root /root/.Xauthority )
 
 ensure_contains "/etc/profile" "alias cp=/usr/bin/cp"
 
@@ -51,7 +56,7 @@ ensure_contains_with_removal "/etc/fstab" \
 update_file 774 root /etc/rc.d/rc.local
 ```
 
-That's it.
+But ultimately, it's just a recurring bash script; do whatever you want.
 
 ## Who should use Sockpuppet?
 
