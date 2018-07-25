@@ -143,6 +143,6 @@ $XXX/hour to literally write config files for your config files.  It seemed
 as though much of the complexity in this space was superfluous.
 
 If you write any other simple, basic primitives that are useful to you, try
-submitting a pull request to include them here.  (Requests formatted as merely
-code-containing comments also acceptable.)
+submitting a pull request to include them here.  (Code-containing comments
+also acceptable if desired.)
 
