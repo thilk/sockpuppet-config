@@ -138,7 +138,7 @@ fit for our needs.
 We had seen a bit too much of, e.g., "XXXXXXXXX offers several support tiers
 in addition to expert consulting services to XXXXXXXXX Enterprise customers
 for optimized new implementations and complex data center transformation
-projects," which essentially just amount to paying some VC-funded outfit
+projects," which essentially just amounts to paying some VC-funded outfit
 $XXX/hour to literally write config file for your config files.  It seemed
 as though much of the complexity in this space was superfluous.
 
