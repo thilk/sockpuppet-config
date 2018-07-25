@@ -16,6 +16,19 @@ It is literally just a bash script.
 
 Sockpuppet makes cluster management simple.
 
+## Who should use Sockpuppet?
+
+Anyone tired of the complexity and overhead of e.g. Puppet, Chef, etc.
+
+All you need to do is make a directory with the desired config files,
+specify how to handle each one (in an optionally-host-dependent manner),
+and run sockpuppet.sh once on each host that you want to control.
+
+Sockpuppet will automatically update itself and its instructions from
+the provided central location, indefinitely, unless uninstalled.
+
+Currently *nix-only, for the foreseeable future.
+
 ## How to use Sockpuppet:
 
 Simply specify a master directory containing the desired files, specify how to
@@ -95,18 +108,4 @@ So e.g., this copy of Sockpuppet will synchronize config file state as:
 But ultimately, it's just a recurring bash script; do whatever you want.
 
 Congrats you're done.
-
-## Who should use Sockpuppet?
-
-Anyone tired of the complexity and overhead of e.g. Puppet, Chef, etc.
-
-All you need to do is make a directory with the desired config files,
-specify how to handle each one (in an optionally-host-dependent manner),
-and run sockpuppet.sh once on each host that you want to control.
-
-Sockpuppet will automatically update itself and its instructions from
-the provided central location, indefinitely, unless uninstalled.
-
-Currently *nix-only, for the foreseeable future.
-
 
