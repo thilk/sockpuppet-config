@@ -135,7 +135,7 @@ environment with a few dozen physical servers and various VMs.  It is mainly
 intended for small and mid-sized clusters, and this functionality was a good
 fit for our needs.
 
-We saw a little too much of, e.g., "XXXXXXXXX offers several support tiers
+We had seen a bit too much of, e.g., "XXXXXXXXX offers several support tiers
 in addition to expert consulting services to XXXXXXXXX Enterprise customers
 for optimized new implementations and complex data center transformation
 projects," which essentially just amount to paying some VC-funded outfit
