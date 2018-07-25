@@ -105,6 +105,9 @@ So e.g., this copy of Sockpuppet will synchronize config file state as:
 ...
 ```
 
+... and it will ensure that '/etc/profile' contains the line 'alias cp=/usr/bin/cp', and so on.
+
+
 Then run it as root on the hosts you want to control, to install it:
 
 ```shell
