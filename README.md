@@ -23,6 +23,34 @@ install it (e.g. 'sudo sockpuppet.sh').  Uninstall by passing "uninstall" as
 the first cmdline arg (e.g. 'sudo sockpuppet.sh uninstall').  Currently
 *nix-only, for the foreseeable future.
 
+Examples:
+
+```
+update_file 440 root /etc/sudoers
+update_file 644 root /etc/hosts
+
+update_file 644 root /etc/ganglia/gmond.conf
+update_file 644 root /etc/ganglia/gmetad.conf
+
+hostname_like server && update_file 600 root /etc/vsftpd/vsftpd.conf
+
+update_file 775 root /usr/bin/build_setup.sh
+hostname_like media && update_file 775 root /usr/bin/mount_iso.sh
+
+update_file 664 thilk /home/thilk/.vimrc
+update_file 664 thilk /home/thilk/.muttrc
+
+hashes_match /home/thilk/.Xauthority /root/.Xauthority || ( cp /home/thilk/.Xauthority /root/.Xauthority && chown root:root /root/.Xauthority )
+
+ensure_contains "/etc/profile" "alias cp=/usr/bin/cp"
+
+ensure_contains_with_removal "/etc/fstab" \
+    "san001:/home/share001   /mnt/nfs/san001_share001    nfs4    defaults,bg,nofail,intr,soft,retry=1000    0 0" \
+    "san001_share001"
+
+update_file 774 root /etc/rc.d/rc.local
+```
+
 That's it.
 
 ## Who should use Sockpuppet?
