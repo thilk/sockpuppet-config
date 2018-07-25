@@ -107,12 +107,6 @@ So e.g., this copy of Sockpuppet will synchronize config file state as:
 
 ... and it will ensure that '/etc/profile' contains the line 'alias cp=/usr/bin/cp', and so on.
 
-### Installation:
-
-```shell
-sudo sockpuppet.sh
-```
-
 ### Operations:
 
 The most basic operation is 'update_file', which merely ensures that a
@@ -124,6 +118,12 @@ adding only specific lines to files ('ensure_contains'), and replacing
 lines or eliminating duplicate lines from files ('ensure_contains_with_removal').
 
 But ultimately, it's just a recurring bash script; do whatever you want.
+
+### Installation:
+
+```shell
+sudo sockpuppet.sh
+```
 
 Congrats you're done.
 
@@ -139,7 +139,7 @@ We had seen a bit too much of, e.g., "XXXXXXXXX offers several support tiers
 in addition to expert consulting services to XXXXXXXXX Enterprise customers
 for optimized new implementations and complex data center transformation
 projects," which essentially just amount to paying some VC-funded outfit
-$XXX/hour to literaly write config file for your config files.  It seemed
+$XXX/hour to literally write config file for your config files.  It seemed
 as though much of the complexity in this space was superfluous.
 
 If you write any other simple, basic primitives that are useful to you, try
