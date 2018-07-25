@@ -116,8 +116,8 @@ given file is copied exactly from the central mount/repo/share/etc.
 
 Aside from that, Sockpuppet also exposes a few useful primitives for more
 fine-grained control, like checking hostname patterns ('hostname_like'),
-adding only specific lines to files ('ensure_contains'), and eliminating
-duplicate lines from files ('ensure_contains_with_removal').
+adding only specific lines to files ('ensure_contains'), and replacing
+lines or eliminating duplicate lines from files ('ensure_contains_with_removal').
 
 But ultimately, it's just a recurring bash script; do whatever you want.
 
