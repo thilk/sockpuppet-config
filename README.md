@@ -22,3 +22,17 @@ the first cmdline arg (e.g. 'sudo sockpuppet.sh uninstall').  Currently
 *nix-only, for the foreseeable future.
 
 That's it.
+
+## Who should use Sockpuppet?
+
+Anyone tired of the complexity and overhead of e.g. Puppet, Chef, etc.
+
+Sockpuppet makes cluster management simple.
+
+All you need to do is make a directory with the desired config files,
+specify how to handle each one (in an optionally-host-dependent manner),
+and run sockpuppet.sh once on each host that you want to control.
+Sockpuppet will automatically update itself and its instructions from
+the provided central location, indefinitely, unless uninstalled.
+
+
