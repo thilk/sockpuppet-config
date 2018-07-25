@@ -105,6 +105,12 @@ So e.g., this copy of Sockpuppet will synchronize config file state as:
 ...
 ```
 
+Then run it as root on the hosts you want to control, to install it:
+
+```shell
+sudo sockpuppet.sh
+```
+
 The most basic operation is 'update_file', which merely ensures that a
 given file is copied exactly from the central mount/repo/share/etc.
 
