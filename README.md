@@ -39,7 +39,7 @@ cluster to install it (e.g. 'sudo sockpuppet.sh').  Uninstall by passing
 
 That's it.
 
-## Example configuration:
+### Example configuration:
 
 Sockpuppet is configured by directly editing a copy of sockpuppet.sh itself.
 
@@ -113,6 +113,8 @@ Then run it as root on the hosts you want to control, to install it:
 ```shell
 sudo sockpuppet.sh
 ```
+
+### Operations
 
 The most basic operation is 'update_file', which merely ensures that a
 given file is copied exactly from the central mount/repo/share/etc.
