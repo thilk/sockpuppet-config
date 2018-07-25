@@ -137,9 +137,9 @@ function update_file {
     HOST_PATH=$3
     REPO_PATH="${CFG_MASTER_DIR}${HOST_PATH}"
     if [ -f $HOST_PATH ] && [ -f $REPO_PATH ]; then
-        hashes_match $HOST_PATH $REPO_PATH || ( cp $REPO_PATH $HOST_PATH && chmod $PERMISSIONS $HOST_PATH )
+        hashes_match $HOST_PATH $REPO_PATH || ( cp $REPO_PATH $HOST_PATH && chmod $PERMISSIONS $HOST_PATH && chown $OWNER:$OWNER $HOST_PATH)
     elif [ -f $REPO_PATH ]; then
-        ( cp $REPO_PATH $HOST_PATH && chmod $PERMISSIONS $HOST_PATH )
+        ( cp $REPO_PATH $HOST_PATH && chmod $PERMISSIONS $HOST_PATH && chown $OWNER:$OWNER $HOST_PATH )
     fi
 }
 
