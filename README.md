@@ -14,6 +14,8 @@ It uses a central mount/share/repo of config files/scripts/etc. to sync
 across a cluster.  It runs as a root cronjob every 30 minutes by default.
 It is literally just a bash script.
 
+## How to use Sockpuppet:
+
 Simply specify a master directory containing the desired files, specify how to
 handle each one at the end of the script (see section "AVAILABLE OPERATIONS"
 therein), and run the script as root on each managed node in your cluster to
