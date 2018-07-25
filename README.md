@@ -27,7 +27,32 @@ That's it.
 
 ## Example configuration spec:
 
-Just put something like this at the bottom of sockpuppet.sh (adjust to taste):
+First, fill in the user-specified parameters at the top of sockpuppet.sh:
+
+```
+# master directory containing desired contents for config files/scripts/etc.:
+# this must be accessible to each node, so use e.g. a network share or similar.
+#   example:
+#       CFG_MASTER_DIR="/mnt/nfs/devops/sockpuppet/master_cfg"
+#
+# it is suggested to use hostname-dependent conditions in each managed script
+#   (e.g. in /etc/rc.d/rc.local) to permit using the same script on all nodes,
+#   but alternately, you can instead use multiple different master config file
+#   directories and copies of this script for different respective node types
+#   (e.g. one master dir for web servers, another for compute nodes, etc.).
+#   example:
+#       CFG_MASTER_DIR="/mnt/nfs/devops/sockpuppet/master_cfg_-_compute_nodes"
+#
+CFG_MASTER_DIR="/mnt/nfs/devops/sockpuppet/master_cfg"
+
+# interval (in minutes) to run this script:
+RUN_INTERVAL_MINUTES=30
+
+# desired location of sockpuppet.sh on managed nodes/VMs:
+SOCKPUPPET_LOC="/usr/bin/sockpuppet.sh"
+```
+
+Then put something like this at the bottom of sockpuppet.sh (adjust to taste):
 
 ```
 update_file 440 root /etc/sudoers
@@ -57,6 +82,8 @@ update_file 774 root /etc/rc.d/rc.local
 ```
 
 But ultimately, it's just a recurring bash script; do whatever you want.
+
+Congrats you're done.
 
 ## Who should use Sockpuppet?
 
