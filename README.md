@@ -105,7 +105,7 @@ So e.g., this copy of Sockpuppet will synchronize config file state as:
 ...
 ```
 
-The most basic operation is 'update_file', which simply ensures that a
+The most basic operation is 'update_file', which merely ensures that a
 given file is copied exactly from the central mount/repo/share/etc.
 
 Aside from that, Sockpuppet also exposes a few useful primitives for more
