@@ -139,7 +139,7 @@ We had seen a bit too much of, e.g., "XXXXXXXXX offers several support tiers
 in addition to expert consulting services to XXXXXXXXX Enterprise customers
 for optimized new implementations and complex data center transformation
 projects," which essentially just amounts to paying some VC-funded outfit
-$XXX/hour to literally write config file for your config files.  It seemed
+$XXX/hour to literally write config files for your config files.  It seemed
 as though much of the complexity in this space was superfluous.
 
 If you write any other simple, basic primitives that are useful to you, try
