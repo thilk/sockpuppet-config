@@ -29,7 +29,7 @@ That's it.
 
 First, fill in the user-specified parameters at the top of sockpuppet.sh:
 
-```
+```shell
 # master directory containing desired contents for config files/scripts/etc.:
 # this must be accessible to each node, so use e.g. a network share or similar.
 #   example:
@@ -54,7 +54,7 @@ SOCKPUPPET_LOC="/usr/bin/sockpuppet.sh"
 
 Then put something like this at the bottom of sockpuppet.sh (adjust to taste):
 
-```
+```shell
 update_file 440 root /etc/sudoers
 update_file 644 root /etc/hosts
 
