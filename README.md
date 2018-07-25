@@ -83,6 +83,14 @@ ensure_contains_with_removal "/etc/fstab" \
 update_file 774 root /etc/rc.d/rc.local
 ```
 
+So e.g., this copy of Sockpuppet will synchronize config file state as:
+
+```
+/mnt/nfs/devops/sockpuppet/master_cfg/etc/sudoers ==> /etc/sudoers
+/mnt/nfs/devops/sockpuppet/master_cfg/etc/hosts ==> /etc/hosts
+...
+```
+
 But ultimately, it's just a recurring bash script; do whatever you want.
 
 Congrats you're done.
