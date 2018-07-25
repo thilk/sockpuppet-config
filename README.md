@@ -18,10 +18,11 @@ It is literally just a bash script.
 
 Simply specify a master directory containing the desired files, specify how to
 handle each one at the end of the script (see section "AVAILABLE OPERATIONS"
-therein), and run the script as root on each managed node in your cluster to
-install it (e.g. 'sudo sockpuppet.sh').  Uninstall by passing "uninstall" as
-the first cmdline arg (e.g. 'sudo sockpuppet.sh uninstall').  Currently
-*nix-only, for the foreseeable future.
+therein, or see below), and run the script as root on each managed node in your
+cluster to install it (e.g. 'sudo sockpuppet.sh').  Uninstall by passing
+"uninstall" as the first cmdline arg (e.g. 'sudo sockpuppet.sh uninstall').
+
+Currently *nix-only, for the foreseeable future.
 
 That's it.
 
