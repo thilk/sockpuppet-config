@@ -189,7 +189,7 @@ function hostname_like {
 # update self if needed on each run
 update_file 774 root "$SOCKPUPPET_LOC"
 # execute via central root crontab; update on change to RUN_INTERVAL_MINUTES
-ensure_contains_with_removal '/etc/crontab' '*/'"$RUN_INTERVAL_MINUTES"' * * * * /bin/bash '"$SOCKPUPPET_LOC" 'sockpuppet.sh'
+ensure_contains_with_removal '/etc/crontab' '*/'"$RUN_INTERVAL_MINUTES"' * * * * root '"$SOCKPUPPET_LOC" 'sockpuppet.sh'
 
 # END SYSTEM-SPECIFIED OPERATIONS.
 
