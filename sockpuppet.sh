@@ -139,7 +139,7 @@ function update_file {
     if [ -f $HOST_PATH ] && [ -f $REPO_PATH ]; then
         hashes_match $HOST_PATH $REPO_PATH || ( cp $REPO_PATH $HOST_PATH && chmod $PERMISSIONS $HOST_PATH && chown $OWNER:$OWNER $HOST_PATH)
     elif [ -f $REPO_PATH ]; then
-        ( mkdir -p $HOST_PATH && cp $REPO_PATH $HOST_PATH && chmod $PERMISSIONS $HOST_PATH && chown $OWNER:$OWNER $HOST_PATH )
+        ( mkdir -p $(dirname $HOST_PATH) && cp $REPO_PATH $HOST_PATH && chmod $PERMISSIONS $HOST_PATH && chown $OWNER:$OWNER $HOST_PATH )
     fi
 }
 
